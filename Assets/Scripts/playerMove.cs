@@ -11,6 +11,10 @@ public class playerMove : MonoBehaviour {
 
 	public KeyCode rightKey = KeyCode.D;
 	public KeyCode leftKey = KeyCode.A;
+	public KeyCode fireKey = KeyCode.Space;
+
+	public GameObject projectilePrefab;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -29,6 +33,11 @@ public class playerMove : MonoBehaviour {
 
 		if (transform.position.x > 115) {
 			SceneManager.LoadScene (1);
+		}
+
+		if (Input.GetKeyDown (fireKey)) {
+			GameObject newProjectileObj = Instantiate (projectilePrefab);
+			newProjectileObj.transform.position = transform.position;
 		}
 
 	}
