@@ -37,7 +37,11 @@ public class playerMove : MonoBehaviour {
 
 		if (Input.GetKeyDown (fireKey)) {
 			GameObject newProjectileObj = Instantiate (projectilePrefab);
+<<<<<<< HEAD
+			newProjectileObj.transform.position = new Vector3 (transform.position.x+3, transform.position.y-0.5f, 0);
+=======
 			newProjectileObj.transform.position = transform.position;
+>>>>>>> master
 		}
 
 	}

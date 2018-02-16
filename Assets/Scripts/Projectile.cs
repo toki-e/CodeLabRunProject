@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour {
 
+<<<<<<< HEAD
+	public float moveSpeed = 50f;
+=======
 	public float moveSpeed = 10f;
+>>>>>>> master
 
 	public float maxX = 100f;
 
